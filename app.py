@@ -20,7 +20,7 @@ if secret:
         try:
             response = model.generate_content([
                 "Write both the necessary HTML and CSS to create this webpage design. If the image doesn't appear to be a webpage, you can return 'This is not a webpage'. ",
-                "Make sure to provide both the HTML and CSS for the design.",
+                "Make sure to provide both the HTML and CSS for the design. Ensure that the output is clean, elegant, well-formatted, well-designed, and markdown/code can be copied easily.",
                 image
             ]).text
         except Exception as e:
