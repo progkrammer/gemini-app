@@ -1,18 +1,14 @@
 import streamlit as st
-
-import pathlib, textwrap, os
 from PIL import Image
-
 from dotenv import load_dotenv
 load_dotenv()
-
 import google.generativeai as genai
 
 model = genai.GenerativeModel("gemini-pro-vision")
 
 st.set_page_config(layout="wide")
 st.title("Gemini Webpage Builder")
-st.write("Made with ❤️ from MN.")
+st.write("Made with ❄️ from MN.")
 secret = st.text_input("Enter your Gemini API key", type="password")
 if secret:
     genai.configure(api_key=secret)
